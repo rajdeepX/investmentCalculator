@@ -1,8 +1,26 @@
-# React + Vite
+📈 Investment Calculator
+A simple and interactive React application to help you calculate how your investments grow over time with annual contributions and compound interest.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+Takes user input for:
 
-Currently, two official plugins are available:
+Current Savings
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Yearly Savings
+
+Expected Annual Interest Rate (%)
+
+Investment Duration (Years)
+
+Displays a detailed year-by-year breakdown showing:
+
+Total Savings
+
+Interest Earned (per year)
+
+Total Interest Accumulated
+
+Invested Capital
+
+Includes Reset and Calculate buttons to manage inputs and results easily
+
