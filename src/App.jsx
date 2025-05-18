@@ -7,7 +7,7 @@ import Table from "./components/Table/Table";
 const App = () => {
   const [userInput, setUserInput] = useState(null);
 
-  const calculateHandler = (userInput) => {
+  const calculateHandler = userInput => {
     setUserInput(userInput);
   };
 
@@ -37,14 +37,17 @@ const App = () => {
     <div>
       <Header />
       <Form onCalculate={calculateHandler} />
-
-      {!userInput && <p>No investmet calculated yet.</p>}
-      {userInput && (
-        <Table
-          data={yearlyData}
-          initialInvestment={userInput["current-savings"]}
-        />
-      )}
+      <div className="table-div">
+        {!userInput && (
+          <p style={{ width: "100%" }}>No investmet calculated yet.</p>
+        )}
+        {userInput && (
+          <Table
+            data={yearlyData}
+            initialInvestment={userInput["current-savings"]}
+          />
+        )}
+      </div>
     </div>
   );
 };

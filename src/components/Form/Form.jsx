@@ -24,7 +24,6 @@ const Form = (props) => {
 
   const inputChangeHandler = (input, value) => {
     // the value of input here comes from the value of id in the input elem not the htmlFor
-    console.log(input, value);
     setUserInput((prevInput) => {
       return {
         ...prevInput,
